@@ -20,9 +20,6 @@ def downvote():
     if client.send_message(entity=m3839, message="-", reply_to=to_downvote):
         downvoted.add(to_downvote)
 
-
-print(client.get_entity(config.M3839_CHAT_ID))
-
 while True:
     try:
         downvote()
